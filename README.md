@@ -45,3 +45,6 @@ En resumen, los trabajos relacionados ofrecen diversas perspectivas sobre la rel
 
 ## Configuración arquitectónica de contenedores para la medición de consumo energético con PowerAPI
 La figura expone de forma general el funcionamiento del medidor de potencia de software en PowerAPI, (1) un sensor recopila las métricas sin procesar de la máquina en la que resida las aplicaciones o el software que se desea monitorear en términos de consumo de energía, siendo incompatible una máquina virtual. (2) Las métricas se almacenan en una base de datos para ser utilizadas en un modelo de consumo de energía del software. (3) El modelo de consumo Power Model, utiliza técnicas de aprendizaje automático para estimar el consumo de energía de las aplicaciones o del software con las métricas sin procesar y se calibra a si mismo cuando es necesario. (4) Los valores de las estimaciones producidas por el modelo de consumo se almacenan en otra base de datos. (5) Finalmente, las estimaciones almacenadas en la base de datos se utilizan para optimizar las aplicaciones o el software que se está midiendo.
+
+
+![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/PowerAPI.png)
