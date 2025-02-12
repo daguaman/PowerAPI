@@ -54,3 +54,4 @@ La figura expone la implementación de la arquitectura de PowerAPI en un entorno
 En ambos escenarios se toma como referencia el Power consumption estimation in PowerAPI, la integración de cada componente y la configuración de plataformas tales como Docker, Docker Compose y Docker Engine, que permiten en cada escenario de experimentación estimar el consumo de energia de la aplicación monitoreada. La implementación efectiva de PowerAPI en los dos escenarios presenta varios desafíos y consideraciones técnicas, el objetivo es obtener resultados de comparación lo más precisos posibles, para ello debe estar establecido el contexto de ejecución asi como el procedimiento para la medición.
 
 ![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/Power API Adapted.png)
+
