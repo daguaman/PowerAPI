@@ -1,6 +1,5 @@
 # PowerAPI
-PowerAPICloud
-Implementación de la arquitectura de PowerAPI en un entorno dockerizado para estimar el consumo energético de aplicaciones de software
+**Implementación de la arquitectura de PowerAPI en un entorno dockerizado para estimar el consumo energético de aplicaciones de software**
 
 ## Green Software
 A lo largo de los años se le ha dado cada vez más importancia al concepto de Green IT, por ser considerado uno de los factores más importantes para combatir el problema mundial del medioambiente. Dicho concepto, al que también se le puede referir como Green Computing, se define como el estudio de diseñar, transformar y crear tecnología usando recursos informáticos sostenibles desde el punto de vista medioambiental.
