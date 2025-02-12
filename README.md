@@ -74,3 +74,7 @@ Estos pasos del proceso se ejecutan tantas veces como aplicaciones requerimos me
 
 ## Aplicaciones monitorizadas Escenario 1: aplicaciones monolíticas java
 ![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/AppMVCMonitorizadas.png)
+
+## Aplicaciones monitorizadas Escenario 2: aplicaciones construidas en distintos lenguajes de programación que usan patrón arquitectónico MVC, monolito modular y microservicios
+![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/AppMonitorizadasEsc2.png)
+
