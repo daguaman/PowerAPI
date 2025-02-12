@@ -55,3 +55,18 @@ En ambos escenarios se toma como referencia el Power consumption estimation in P
 
 ![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/PowerAPIAdapted.png)
 
+## Diseño de experimentos y uso de PowerAPI
+La ejecución de las aplicaciones en cada entorno dockerizado se realizó siguiendo el proceso de la Figura que incluye la configuración del entorno y los parámetros utilizados durante las pruebas. Se enfatiza en la correcta implementación de PowerAPI, tal como se ha explicado anteriormente, de esta forma, se asegura la precisión y consistencia de las mediciones de consumo de energía en cada uno de los experimentos.
+
+El proceso para medir el consumo de energía de las aplicaciones en los dos escenarios consta de los siguientes pasos:
+1.	Crear archivos de configuración: Los archivos de configuración deben estar creados, configurados y libres de errores. 
+2.	Iniciar y levantar contenedores:} Los contenedores y servicios deben estar levantados y en ejecución. Para el primer escenario se levantará la interfaz gráfica de NetBeans 8.2, mientras que en el segundo escenario se descargarán desde GitHub, las imágenes de los contenedores y configuraciones que tiene cada aplicación (Visual Studio Code, Angular, Flask, TypeScript).
+3. Guardar datos iniciales:} Se debe almacenar los datos iniciales previos a la medición que genera el equipo de medición.
+3.1.	Iniciar y levantar Grafana:} Se accederá a Grafana desde el navegador web, se establece su conexión con Influx Database y tendremos el dashboard creado para visualizar los resultados de consumo.
+4. Para la medición de las aplicaciones:} Iniciar y ejecutar la aplicación a monitorizar, desde el contenedor que contiene la aplicación a ser medida, se ejecuta la aplicación y se comienza a usar los módulos y funcionalidades de la aplicación durante el lapso de 2 a 5 minutos. 
+Por ejemplo, en el caso de una aplicación CRUD (Crear-Leer-Actualizar-Borrar), se ejecutarán todas estas funcionalidades al menos con un objeto.  
+5.	Medir la aplicación: Este paso se ejecuta automáticamente, cuando se inician los contenedores Docker y se inician los servicios del HWPC Sensor, las bases de datos y la fórmula para obtener los datos de consumo de energía en cada contenedor. Sin embargo, cuando se ejecuta la aplicación es cuando se colectan los datos en \textit{Influx Database}. 
+6.	Visualizar dashboard en Grafana:} Con los datos guardados en Influx en tiempo real se visualiza las gráficas en Grafana. Para ello introducimos la query que mostrará los últimos dos minutos de la ejecución del contenedor, ya que será la salida que se exporta en formato .CSV desde Grafana con los datos de consumo de cada aplicación con un intervalo de 1 segundo. Cabe destacar que, aunque en la visualización del dashboard podemos modificar parámetros, será la query la que responda ante el fichero exportado, para su posterior análisis y comparación. 
+Estos pasos del proceso se ejecutan tantas veces como aplicaciones requerimos medir, pues para empezar a monitorizar una nueva aplicación se vuelve a ejecutar la aplicación a monitorizar desde el paso 1.
+
+![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/PowerAPIMedicion.png)
