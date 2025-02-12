@@ -55,7 +55,9 @@ En ambos escenarios se toma como referencia el Power consumption estimation in P
 ![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/PowerAPIAdapted.png)
 
 ## Diseño de experimentos y uso de PowerAPI
-La ejecución de las aplicaciones en cada entorno dockerizado se realizó siguiendo el proceso de la Figura que incluye la configuración del entorno y los parámetros utilizados durante las pruebas. Se enfatiza en la correcta implementación de PowerAPI, tal como se ha explicado anteriormente, de esta forma, se asegura la precisión y consistencia de las mediciones de consumo de energía en cada uno de los experimentos.
+La ejecución de las aplicaciones en cada entorno dockerizado se realizó siguiendo el proceso de la Figura que incluye la configuración del entorno y los parámetros utilizados durante las pruebas. Se enfatiza en la correcta implementación de PowerAPI en la Infraestructura propuesta en la Imagen, tal como se ha explicado anteriormente, de esta forma, se asegura la precisión y consistencia de las mediciones de consumo de energía en cada uno de los experimentos.
+
+![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/InfrMidePowerAPI.png)
 
 El proceso para medir el consumo de energía de las aplicaciones en los dos escenarios consta de los siguientes pasos:
 1.	Crear archivos de configuración: Los archivos de configuración deben estar creados, configurados y libres de errores. 
