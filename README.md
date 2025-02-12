@@ -71,3 +71,6 @@ Por ejemplo, en el caso de una aplicación CRUD (Crear-Leer-Actualizar-Borrar), 
 Estos pasos del proceso se ejecutan tantas veces como aplicaciones requerimos medir, pues para empezar a monitorizar una nueva aplicación se vuelve a ejecutar la aplicación a monitorizar desde el paso 1.
 
 ![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/PowerAPIMedicion.png)
+
+## Aplicaciones monitorizadas Escenario 1: aplicaciones monolíticas java
+![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/AppMVCMonitorizadas.png)
