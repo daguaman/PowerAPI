@@ -48,3 +48,9 @@ La figura expone de forma general el funcionamiento del medidor de potencia de s
 
 
 ![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/PowerAPI.png)
+
+## Implementación de PowerAPI en un entorno dockerizado
+La figura expone la implementación de la arquitectura de PowerAPI en un entorno dockerizado, al que se denomina (Cloud - Docker), para monitorear en tiempo real el consumo de energia en dos escenarios. Escenario 1: aplicaciones monolíticas java, escenario 2: aplicaciones construidas en distintos lenguajes de programación que usan patrón arquitectónico MVC, monolito modular y microservicios.
+En ambos escenarios se toma como referencia el Power consumption estimation in PowerAPI, la integración de cada componente y la configuración de plataformas tales como Docker, Docker Compose y Docker Engine, que permiten en cada escenario de experimentación estimar el consumo de energia de la aplicación monitoreada. La implementación efectiva de PowerAPI en los dos escenarios presenta varios desafíos y consideraciones técnicas, el objetivo es obtener resultados de comparación lo más precisos posibles, para ello debe estar establecido el contexto de ejecución asi como el procedimiento para la medición.
+
+![alt text](https://github.com/daguaman/PowerAPI/blob/main/images/Power API Adapted.png)
